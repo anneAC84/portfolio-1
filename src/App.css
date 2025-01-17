@@ -8,12 +8,21 @@
 
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
-body {
+
+html,body {
   font-family: 'Chewy', sans-serif; /* Change 'Fredoka One' to the font you chose */
   padding-top: 70px;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 
@@ -109,9 +118,17 @@ section:nth-child(odd) {
     left: 0;
     right: 0;
     z-index: 1000; /* Keeps the navbar above the content */
+    overflow-x: hidden;
   }
 
   body {
     padding-top: 80px; /* Push the content down below the navbar */
+  }
+}
+
+
+@media (max-width: 480px) {
+  section {
+    padding: 2rem 5%; /* Reduce padding on smaller screens */
   }
 }
